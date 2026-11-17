@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anvesh Labs — Independent studio crafting modern mobile apps</title>
-<meta name="description" content="Anvesh Labs is an independent product studio building modern, multilingual mobile apps for learning. Meet Sarav, daily exam practice in your own language, and SchoolDeck, simple school management.">
-<meta name="keywords" content="Anvesh Labs, mobile app studio, edtech apps, learning apps, Sarav app, exam practice app, Police Bharti app, MPSC app, school management software">
+<meta name="description" content="Anvesh Labs is an independent product studio building modern, multilingual mobile apps for learning. Meet Sarav, daily exam practice in your own language, and Hisheb, fee collection made simple for tutors.">
+<meta name="keywords" content="Anvesh Labs, mobile app studio, edtech apps, learning apps, Sarav app, exam practice app, Police Bharti app, MPSC app, tuition fee app, tutor app, Hisheb app">
 <meta name="author" content="Anvesh Labs">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://anveshlabs.com/">
@@ -21,7 +21,7 @@
 <meta property="og:locale:alternate" content="mr_IN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Anvesh Labs — Modern mobile apps for learning">
-<meta name="twitter:description" content="Daily exam practice, simple school software and more from an independent product studio.">
+<meta name="twitter:description" content="Daily exam practice, effortless fee collection for tutors and more from an independent product studio.">
 <meta name="twitter:image" content="https://anveshlabs.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%2314172E'/%3E%3Ccircle cx='24' cy='96' r='7' fill='%23A9ADC6'/%3E%3Ccircle cx='42' cy='82' r='8.5' fill='%23C3A496'/%3E%3Ccircle cx='60' cy='66' r='10' fill='%23D99B75'/%3E%3Ccircle cx='80' cy='47' r='11.5' fill='%23E8955C'/%3E%3Ccircle cx='99' cy='25' r='13' fill='%23F0904A'/%3E%3C/svg%3E">
@@ -62,6 +62,17 @@
       "inLanguage": ["mr", "en"],
       "image": "https://anveshlabs.com/assets/sarav-icon.png",
       "description": "Daily 10-question practice in Marathi for Maharashtra Police Bharti, Talathi and MPSC exams, with streaks, district leagues and mistake review.",
+      "publisher": {"@id": "https://anveshlabs.com/#org"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Hisheb",
+      "alternateName": "हिशेब",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "inLanguage": ["mr", "hi", "en"],
+      "description": "Fee collection for home tutors and tuition classes: WhatsApp reminders with a UPI pay link, receipts and attendance. Parents install nothing.",
       "publisher": {"@id": "https://anveshlabs.com/#org"},
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}
     }
@@ -291,7 +302,7 @@
           <div class="eyebrow"><i></i>Our apps</div>
           <h2 id="apps-title">Products built to last.</h2>
         </div>
-        <p>Every product we build starts with one question: what would actually help? Our first answers are a daily practice habit for exam aspirants and simpler software for schools.</p>
+        <p>Every product we build starts with one question: what would actually help? Our first answers are a daily practice habit for exam aspirants and a calmer way for tutors to get paid.</p>
       </div>
 
       <div class="apps">
@@ -324,28 +335,26 @@
           </div>
         </article>
 
-        <article class="app reveal" aria-labelledby="sd-title">
+        <article class="app reveal" id="hisheb" aria-labelledby="hisheb-title">
           <div class="app-top">
             <div class="app-id">
-              <div class="app-icon light" aria-hidden="true">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#14172E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
-              </div>
+              <div class="app-icon light" aria-hidden="true"><span lang="mr">हि</span></div>
               <div>
-                <small>School management · Web &amp; mobile</small>
-                <h3 id="sd-title">SchoolDeck</h3>
+                <small>Tutors · Android</small>
+                <h3 id="hisheb-title" style="white-space:nowrap">Hisheb <span lang="mr" style="color:var(--saffron-text);font-size:.8em">हिशेब</span></h3>
               </div>
             </div>
             <span class="pill dim">In development</span>
           </div>
-          <p>School software designed for how schools actually run: multilingual, ready for compliance, and simple enough for every teacher to use.</p>
+          <p>Get your tuition fees on time, without the awkward conversations. Hisheb sends parents a polite reminder on WhatsApp with a link to pay by UPI, and keeps the accounts for you.</p>
           <ul class="feat" style="grid-template-columns:1fr">
-            <li>Attendance in seconds, by teachers, on their phones</li>
-            <li>Fee collection and receipts without the paperwork</li>
-            <li>Instant notifications to parents on WhatsApp</li>
-            <li>Multilingual certificates and compliance-ready reports</li>
+            <li>Know who has paid and who hasn't, at a glance</li>
+            <li>One-tap WhatsApp reminders with a UPI pay link</li>
+            <li>Parents pay from any UPI app and install nothing</li>
+            <li>Receipts, cash entries and quick attendance in one place</li>
           </ul>
           <div class="actions">
-            <a class="btn btn-ghost" href="mailto:hello@anveshlabs.com?subject=SchoolDeck%20for%20our%20school">Bring it to your school</a>
+            <a class="btn btn-ghost" href="mailto:hello@anveshlabs.com?subject=I%27d%20like%20to%20try%20Hisheb">Join the early list</a>
           </div>
         </article>
 
@@ -442,7 +451,7 @@
         <p class="copied" id="copied" aria-live="polite"></p>
       </div>
       <ul class="who reveal" aria-label="Who we'd love to hear from">
-        <li><b>Schools &amp; trusts</b><span>Try SchoolDeck</span></li>
+        <li><b>Tutors &amp; tuition classes</b><span>Try Hisheb early</span></li>
         <li><b>Educators &amp; creators</b><span>Partner on Sarav</span></li>
         <li><b>Learning companies</b><span>Build with us</span></li>
         <li><b>Learners</b><span>Tell us what you need</span></li>

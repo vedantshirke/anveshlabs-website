@@ -1,6 +1,6 @@
 # Anvesh Labs — website
 
-Source for [anveshlabs.com](https://anveshlabs.com): a static, single-page site for Anvesh Labs and its apps (Sarav, SchoolDeck).
+Source for [anveshlabs.com](https://anveshlabs.com): a static, single-page site for Anvesh Labs and its apps (Sarav, Hisheb).
 
 ## Files
 
