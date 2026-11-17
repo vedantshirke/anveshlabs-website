@@ -1,7 +1,7 @@
 :root{
   --ivory:#F7F5F0; --paper:#EFECE4; --ink:#14172E; --ink-2:#3B3F5C; --muted:#5A5F7A;
   --line:#DAD5C9; --saffron:#D9691F; --saffron-text:#A94C0E;
-  --serif:'Fraunces', Georgia, serif; --sans:'Inter', system-ui, sans-serif; --mr:'Mukta', 'Inter', sans-serif;
+  --serif:'Ubuntu', system-ui, sans-serif; --sans:'Ubuntu', system-ui, sans-serif; --mr:'Mukta', 'Ubuntu', sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
