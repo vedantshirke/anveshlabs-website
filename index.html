@@ -9,7 +9,7 @@
 <meta name="author" content="Anvesh Labs">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://anveshlabs.com/">
-<meta name="theme-color" content="#12152A">
+<meta name="theme-color" content="#14172E">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Anvesh Labs">
@@ -28,7 +28,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -68,202 +68,167 @@
   ]
 }
 </script>
+
 <style>
   :root{
-    --ivory:#F6F3EC; --paper:#ECE7DC; --ink:#12152A; --ink-2:#3A3E58; --muted:#5D6178;
-    --line:#D8D1C2; --line-dark:#2C3050; --saffron:#D9691F; --saffron-text:#A94C0E; --saffron-soft:#F0904A;
-    --serif:'Instrument Serif', 'Times New Roman', serif; --sans:'Instrument Sans', system-ui, sans-serif; --mr:'Tiro Devanagari Marathi', 'Instrument Serif', serif;
-    --wrap:1240px;
+    --ivory:#F7F5F0; --paper:#EFECE4; --ink:#14172E; --ink-2:#3B3F5C; --muted:#5A5F7A;
+    --line:#DAD5C9; --saffron:#D9691F; --saffron-text:#A94C0E; --saffron-soft:#F0904A;
+    --serif:'Fraunces', Georgia, serif; --sans:'Inter', system-ui, sans-serif; --mr:'Mukta', 'Inter', sans-serif;
+    --wrap:1160px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
   img,svg{display:block}
   a{color:inherit}
   [lang="mr"]{font-family:var(--mr)}
-  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
   .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--ivory);padding:8px 14px;border-radius:8px;z-index:50}
   .skip:focus{left:12px}
   :focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:4px}
-  .label{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-  .serif{font-family:var(--serif);font-weight:400}
-  em{font-family:var(--serif);font-style:italic}
 
   /* Header */
-  header.site{position:sticky;top:0;z-index:20;background:rgba(246,243,236,.86);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+  header.site{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.88);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
   header.site.scrolled{border-bottom-color:var(--line)}
-  .bar{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-  .brand .word{font-family:var(--serif);font-size:28px;letter-spacing:-.01em;line-height:1}
-  .brand .word i{font-style:italic;color:var(--muted)}
-  nav.main ul{display:flex;gap:36px;list-style:none;margin:0;padding:0}
-  nav.main a{text-decoration:none;font-size:15px;color:var(--ink-2);padding:10px 0;position:relative}
-  nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:1px;background:var(--saffron);transition:right .3s}
-  nav.main a:hover::after{right:0}
-  .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:500 15px/1 var(--sans);text-decoration:none;border:1px solid var(--ink);cursor:pointer;transition:background .2s,color .2s}
+  .brand b{font-weight:600;font-size:21px;letter-spacing:-.02em}
+  .brand span{font-weight:400;font-size:21px;letter-spacing:-.02em;color:var(--muted)}
+  nav.main ul{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+  nav.main a{text-decoration:none;font-size:15px;color:var(--ink-2);padding:10px 0}
+  nav.main a:hover{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:500 15px/1 var(--sans);text-decoration:none;border:1px solid var(--ink);cursor:pointer;transition:transform .15s, background .15s}
+  .btn:hover{transform:translateY(-1px)}
   .btn-dark{background:var(--ink);color:var(--ivory)}
-  .btn-dark:hover{background:var(--saffron-text);border-color:var(--saffron-text)}
+  .btn-dark:hover{background:#262A4A}
   .btn-ghost{background:transparent;color:var(--ink)}
-  .btn-ghost:hover{background:var(--ink);color:var(--ivory)}
-  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+  .btn-ghost:hover{background:var(--paper)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--ink)}
 
   /* Hero */
-  .hero{padding:56px 0 0}
-  .meta-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line)}
-  h1{font-family:var(--serif);font-weight:400;font-size:clamp(56px,9.4vw,148px);line-height:.92;letter-spacing:-.035em;margin:56px 0 0}
-  h1 em{color:var(--saffron-text)}
-  .hero-foot{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;margin-top:56px;align-items:end}
-  .hero-foot .lede{grid-column:7 / span 6;font-size:20px;line-height:1.55;color:var(--ink-2);margin:0 0 28px}
-  .hero-foot .cta{grid-column:7 / span 6;display:flex;flex-wrap:wrap;gap:12px}
-  .hero-foot .scroll{grid-column:1 / span 4;grid-row:1 / span 2;align-self:end;display:flex;align-items:center;gap:14px}
-  .scroll .line{width:56px;height:1px;background:var(--ink)}
-  .rise{margin-top:72px;height:200px;position:relative;border-top:1px solid var(--line)}
-  .rise svg{position:absolute;inset:0;width:100%;height:100%}
+  .hero{padding:96px 0 112px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  .eyebrow i{width:28px;height:1px;background:var(--saffron)}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,6.2vw,84px);line-height:1.02;letter-spacing:-.025em;margin:22px 0 26px}
+  h1 em{font-style:italic;color:var(--saffron-text)}
+  .lede{font-size:20px;line-height:1.6;color:var(--ink-2);max-width:580px;margin:0 0 36px}
+  .cta{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-mark{position:relative;aspect-ratio:1/1;background:var(--ink);border-radius:36px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .hero-mark svg{width:62%}
+  .hero-mark .caption{position:absolute;left:28px;bottom:24px;right:28px;display:flex;justify-content:space-between;color:#A9ADC6;font-size:13px;letter-spacing:.06em}
+  .hero-mark .caption span[lang="mr"]{font-size:17px;color:var(--saffron-soft);letter-spacing:0}
 
-  /* Marquee */
-  .marquee{background:var(--ink);color:var(--ivory);overflow:hidden;padding:26px 0;white-space:nowrap}
-  .track{display:inline-flex;gap:48px;animation:slide 38s linear infinite;padding-left:48px}
-  .track span{font-family:var(--serif);font-size:38px;line-height:1}
-  .track span[lang="mr"]{font-size:34px;color:var(--saffron-soft)}
-  .track b{width:10px;height:10px;border-radius:50%;background:var(--saffron);align-self:center;flex:none}
-  @keyframes slide{to{transform:translateX(-50%)}}
+  /* Sections */
+  section{padding:120px 0}
+  .sec-head{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;margin-bottom:64px;align-items:end}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(36px,4.4vw,56px);line-height:1.08;letter-spacing:-.02em;margin:14px 0 0}
+  .sec-head p{color:var(--ink-2);font-size:18px;margin:0;max-width:560px}
+  h3{font-family:var(--serif);font-weight:500;font-size:30px;letter-spacing:-.015em;line-height:1.15;margin:0}
 
-  /* Section scaffold */
-  section.block{padding:136px 0;border-bottom:1px solid var(--line)}
-  .sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
-  .sec-side{position:relative}
-  .sec-side .sticky{position:sticky;top:110px;display:grid;gap:10px}
-  .sec-side .num{font-family:var(--serif);font-size:56px;line-height:1;color:var(--saffron-text)}
-  h2{font-family:var(--serif);font-weight:400;font-size:clamp(44px,5.6vw,84px);line-height:.98;letter-spacing:-.03em;margin:0 0 28px}
-  h2 em{color:var(--saffron-text)}
-  .intro{font-size:19px;color:var(--ink-2);max-width:620px;margin:0 0 72px}
+  /* Apps */
+  .apps{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+  .app{background:#fff;border:1px solid var(--line);border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:22px}
+  .app.flag{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+  .app-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .app-id{display:flex;align-items:center;gap:16px}
+  .app-icon{width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;flex:none}
+  .flag .app-icon{background:var(--saffron)}
+  .app-icon.light{background:var(--paper)}
+  .app-icon span{font:600 34px/1 var(--mr);color:#fff;margin-top:4px}
+  .app-icon.light span{color:var(--ink)}
+  .app small{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .flag small{color:#A9ADC6}
+  .pill{font-size:13px;font-weight:500;padding:7px 14px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+  .flag .pill{color:var(--saffron-soft)}
+  .pill.dim{color:var(--muted)}
+  .app p{margin:0;color:var(--ink-2)}
+  .flag p{color:#C9CCDD}
+  .feat{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
+  .feat li{display:flex;gap:12px;font-size:15.5px;line-height:1.5}
+  .feat li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--saffron);margin-top:8px}
+  .flag .feat li{color:#E4E5EE}
+  .tracks{display:flex;flex-wrap:wrap;gap:8px}
+  .tracks span{font-size:14px;padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.07);color:#E4E5EE}
+  .tracks span.on{background:var(--saffron);color:#fff}
+  .app .actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px;padding-top:8px}
+  .flag .btn-light{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+  .flag .btn-line{background:transparent;color:var(--ivory);border-color:#4A4E6E}
+  .next{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px dashed var(--line);border-radius:28px;padding:28px 40px;color:var(--ink-2)}
+  .next b{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--ink)}
 
-  /* Sarav feature */
-  .feature{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:72px;align-items:center;padding-bottom:72px;border-bottom:1px solid var(--line)}
-  .app-name{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:14px 0 18px}
-  .app-name h3{font-family:var(--serif);font-weight:400;font-size:72px;line-height:1;letter-spacing:-.03em;margin:0}
-  .app-name span[lang="mr"]{font-size:44px;color:var(--saffron-text)}
-  .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:#fff}
-  .status i{width:7px;height:7px;border-radius:50%;background:var(--saffron)}
-  .feature p.desc{font-size:19px;color:var(--ink-2);max-width:560px;margin:0 0 32px}
-  .flist{list-style:none;margin:0 0 32px;padding:0;border-top:1px solid var(--line)}
-  .flist li{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--ink-2)}
-  .flist li span{font-family:var(--serif);font-size:20px;color:var(--saffron-text);line-height:1.2}
-  .tracks{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
-  .tracks span{font-size:14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line)}
-  .tracks span.on{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
-
-  /* Phone */
-  .phone{justify-self:center;width:320px;border-radius:44px;background:var(--ink);padding:14px;box-shadow:0 40px 80px -30px rgba(18,21,42,.45);transform:rotate(-3deg)}
-  .screen{border-radius:32px;background:var(--ivory);padding:22px 20px 26px;min-height:560px;display:flex;flex-direction:column;gap:16px}
-  .s-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
-  .s-top .streak{display:inline-flex;align-items:center;gap:6px;color:var(--saffron-text);font-weight:600}
-  .s-progress{height:6px;border-radius:6px;background:var(--paper);overflow:hidden}
-  .s-progress i{display:block;width:40%;height:100%;background:var(--saffron)}
-  .s-count{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-  .s-q{font-family:var(--mr);font-size:24px;line-height:1.35;color:var(--ink);margin:0}
-  .s-opts{display:grid;gap:10px}
-  .s-opts div{font-family:var(--mr);font-size:17px;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:#fff}
-  .s-opts div.right{border-color:var(--saffron);background:#FCEEE3}
-  .s-exp{font-family:var(--mr);font-size:14.5px;line-height:1.5;color:var(--ink-2);background:var(--paper);border-radius:14px;padding:12px 14px}
-  .s-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--muted)}
-
-  /* Index rows */
-  .row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:40px;align-items:center;padding:44px 0;border-bottom:1px solid var(--line);text-decoration:none}
-  .row h3{font-family:var(--serif);font-weight:400;font-size:48px;line-height:1;letter-spacing:-.025em;margin:10px 0 0}
-  .row p{margin:0;color:var(--ink-2)}
-  .row .go{width:56px;height:56px;border-radius:50%;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s,transform .3s}
-  a.row:hover .go{background:var(--ink);color:var(--ivory);transform:rotate(-45deg)}
-  .row.soft h3{color:var(--muted)}
-
-  /* The name */
-  .name{background:var(--ink);color:var(--ivory);border-bottom:0}
-  .name .label{color:#A3A7C2}
-  .name .sec-side .num{color:var(--saffron-soft)}
-  .entry{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:72px;align-items:end}
-  .big-mr{font-family:var(--mr);font-size:clamp(110px,15vw,220px);line-height:1;color:var(--ivory);margin:0}
-  .pron{display:flex;flex-wrap:wrap;gap:18px;align-items:baseline;margin-top:24px;color:#A3A7C2}
-  .pron .serif{font-size:30px;color:var(--ivory);font-style:italic}
-  .def{border-top:1px solid var(--line-dark);padding-top:28px}
-  .def ol{margin:0;padding-left:22px;display:grid;gap:14px}
-  .def li{font-family:var(--serif);font-size:28px;line-height:1.25;color:var(--ivory)}
-  .def li::marker{color:var(--saffron-soft);font-size:18px}
-  .name-note{grid-column:1 / -1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:88px;padding-top:40px;border-top:1px solid var(--line-dark)}
-  .name-note h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin:0 0 12px;color:var(--ivory)}
-  .name-note p{margin:0;color:#C6C9DA;font-size:16px}
+  /* Story */
+  .story{background:var(--ink);color:var(--ivory)}
+  .story .eyebrow{color:#A9ADC6}
+  .story h2{color:var(--ivory)}
+  .story .sec-head p{color:#C9CCDD}
+  .decode{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-bottom:72px}
+  .letter{border-top:1px solid #33375A;padding-top:22px}
+  .letter .dot{border-radius:50%;margin-bottom:22px}
+  .letter b{display:block;font-family:var(--serif);font-weight:500;font-size:64px;line-height:1;letter-spacing:-.02em}
+  .letter span{display:block;margin-top:10px;color:#A9ADC6;font-size:15px}
+  .story-body{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+  .story-body p{margin:0 0 20px;color:#D5D7E3;font-size:18px}
+  blockquote{margin:0;font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);line-height:1.3;letter-spacing:-.01em;color:var(--ivory)}
+  blockquote span[lang="mr"]{display:block;margin-top:18px;font-size:22px;color:var(--saffron-soft)}
 
   /* Craft */
-  .craft{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
-  .craft article{padding:40px 40px 40px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:8px}
-  .craft article:nth-child(even){padding-left:40px;padding-right:0;border-left:1px solid var(--line)}
-  .craft .n{font-family:var(--serif);font-size:22px;color:var(--saffron-text);line-height:1.3}
-  .craft h3{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.05;letter-spacing:-.02em;margin:0 0 12px}
+  .craft{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+  .craft article{background:var(--ivory);padding:40px 36px}
+  .craft .num{font-family:var(--serif);font-size:15px;color:var(--saffron-text)}
+  .craft h3{font-size:24px;margin:14px 0 12px}
   .craft p{margin:0;color:var(--ink-2);font-size:16px}
-  .stack{margin-top:56px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-  .stack .label{margin-right:10px}
-  .stack span:not(.label){font-size:14px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff}
+  .stack{margin-top:48px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .stack em{font-style:normal;color:var(--muted);font-size:14px;margin-right:6px}
+  .stack span{font-size:14px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fff}
 
   /* Contact */
-  .contact{padding:136px 0 96px}
-  .contact h2{font-size:clamp(52px,7.4vw,116px);max-width:1000px}
-  .mail-big{display:inline-flex;align-items:center;gap:18px;font-family:var(--serif);font-size:clamp(32px,4.4vw,60px);line-height:1.1;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:6px;margin:24px 0 18px;word-break:break-all}
-  .mail-big:hover{color:var(--saffron-text);border-color:var(--saffron-text)}
-  .mail-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-  .copied{font-size:14px;color:var(--saffron-text);min-height:22px;margin:12px 0 0}
-  .who{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:96px;border-top:1px solid var(--line)}
-  .who div{padding:28px 28px 0 0}
-  .who div + div{padding-left:28px;border-left:1px solid var(--line)}
-  .who b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1;margin-bottom:8px}
-  .who span{color:var(--muted);font-size:15px}
+  .contact{background:var(--paper);border-top:1px solid var(--line)}
+  .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+  .who{list-style:none;padding:0;margin:0;display:grid;gap:0}
+  .who li{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .who li b{font-weight:500}
+  .who li span{color:var(--muted);text-align:right}
+  .mail{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+  .mail code{font:500 20px/1 var(--sans);letter-spacing:-.01em}
+  .copied{font-size:14px;color:var(--saffron-text);min-height:20px}
 
-  /* Footer */
-  footer{background:var(--ink);color:#A3A7C2;padding:72px 0 40px;overflow:hidden}
-  .giant{font-family:var(--serif);font-size:clamp(48px,17vw,280px);line-height:.82;letter-spacing:-.045em;color:var(--ivory);margin:0 0 48px;white-space:nowrap}
-  .giant i{color:var(--saffron-soft)}
-  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center;font-size:14px;border-top:1px solid var(--line-dark);padding-top:28px}
-  .foot ul{display:flex;flex-wrap:wrap;gap:24px;list-style:none;margin:0;padding:0}
+  footer{padding:56px 0 48px;border-top:1px solid var(--line)}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center;color:var(--muted);font-size:14px}
+  .foot ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
   .foot a{text-decoration:none}
-  .foot a:hover{color:var(--ivory)}
-  .disclaimer{font-size:13px;margin:0 0 20px;color:#8D91AE}
+  .foot a:hover{color:var(--ink)}
 
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease, transform .9s ease}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease, transform .8s ease}
   .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}.track{animation:none}html{scroll-behavior:auto}}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
-  @media (max-width: 1024px){
-    .sec{grid-template-columns:1fr;gap:28px}
-    .sec-side .sticky{position:static;display:flex;align-items:baseline;gap:18px}
-    .feature{grid-template-columns:1fr;gap:56px}
-    .entry{grid-template-columns:1fr;gap:40px}
-    .hero-foot .lede,.hero-foot .cta{grid-column:1 / -1}
-    .hero-foot .scroll{display:none}
-    .who{grid-template-columns:1fr 1fr}
-    .who div:nth-child(3){padding-left:0;border-left:0}
+  @media (max-width: 960px){
+    .hero-grid,.sec-head,.apps,.story-body,.contact-grid{grid-template-columns:1fr}
+    .hero-mark{max-width:420px}
+    .craft{grid-template-columns:1fr 1fr}
+    .decode{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+    .letter b{font-size:40px}
   }
   @media (max-width: 720px){
     body{font-size:16px}
-    .wrap{padding:0 22px}
-    section.block{padding:88px 0}
+    section{padding:84px 0}
+    .hero{padding:56px 0 80px}
     .menu-btn{display:inline-flex;align-items:center;justify-content:center}
-    nav.main{position:absolute;top:76px;left:0;right:0;background:var(--ivory);border-bottom:1px solid var(--line);display:none}
+    nav.main{position:absolute;top:72px;left:0;right:0;background:var(--ivory);border-bottom:1px solid var(--line);display:none}
     nav.main.open{display:block}
-    nav.main ul{flex-direction:column;gap:0;padding:8px 22px 20px}
-    nav.main a{display:block;padding:14px 0;font-size:18px}
+    nav.main ul{flex-direction:column;gap:0;padding:8px 28px 20px}
+    nav.main a{display:block;padding:14px 0;font-size:17px}
     .bar .btn-dark{display:none}
-    h1{margin-top:40px}
-    .rise{height:120px;margin-top:48px}
-    .track span{font-size:28px}
-    .app-name h3{font-size:56px}
-    .phone{width:290px}
-    .row{grid-template-columns:1fr auto;gap:16px}
-    .row p{grid-column:1 / -1;grid-row:2}
-    .row h3{font-size:38px}
+    .app{padding:28px}
+    .feat{grid-template-columns:1fr}
     .craft{grid-template-columns:1fr}
-    .craft article,.craft article:nth-child(even){padding:32px 0;border-left:0}
-    .name-note{grid-template-columns:1fr;gap:32px}
-    .who{grid-template-columns:1fr}
-    .who div,.who div + div{padding:22px 0;border-left:0;border-bottom:1px solid var(--line)}
-    .def li{font-size:24px}
+    .decode{grid-template-columns:1fr;gap:0}
+    .letter{display:flex;align-items:center;gap:20px;padding:16px 0}
+    .letter .dot{margin:0}
+    .letter b{font-size:34px;width:52px}
+    .letter span{margin:0}
+    .next{flex-direction:column;align-items:flex-start;padding:24px 28px}
   }
 </style>
 </head>
@@ -274,21 +239,21 @@
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="Anvesh Labs — home">
       <svg width="34" height="34" viewBox="0 0 120 120" aria-hidden="true">
-        <circle cx="14" cy="100" r="7" fill="#12152A"/><circle cx="35" cy="84" r="8.5" fill="#4A3A52"/><circle cx="57" cy="66" r="10" fill="#7D4B4E"/><circle cx="81" cy="45" r="11.5" fill="#B05A36"/><circle cx="105" cy="20" r="14" fill="#D9691F"/>
+        <circle cx="14" cy="100" r="7" fill="#14172E"/><circle cx="35" cy="84" r="8.5" fill="#4A3A52"/><circle cx="57" cy="66" r="10" fill="#7D4B4E"/><circle cx="81" cy="45" r="11.5" fill="#B05A36"/><circle cx="105" cy="20" r="14" fill="#D9691F"/>
       </svg>
-      <span class="word">anvesh <i>labs</i></span>
+      <b>anvesh</b><span>labs</span>
     </a>
     <nav class="main" id="nav" aria-label="Main">
       <ul>
         <li><a href="#apps">Apps</a></li>
-        <li><a href="#name">The name</a></li>
-        <li><a href="#craft">Craft</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#craft">What we do</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn-dark" href="#contact">Get in touch</a>
+    <a class="btn btn-dark" href="#sarav">Meet Sarav</a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 7h14M3 13h14"/></svg>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 6h14M3 14h14"/></svg>
     </button>
   </div>
 </header>
@@ -296,180 +261,209 @@
 <main id="main">
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap">
-      <div class="meta-row reveal">
-        <span class="label">Independent app studio</span>
-        <span class="label">Maharashtra, India</span>
-        <span class="label"><span lang="mr" style="letter-spacing:0;text-transform:none;font-size:15px">अन्वेष लॅब्स</span></span>
-      </div>
-      <h1 id="hero-title" class="reveal">Quietly useful apps, <em>made in Marathi first.</em></h1>
-      <div class="hero-foot">
-        <div class="scroll reveal" aria-hidden="true"><span class="line"></span><span class="label">Scroll</span></div>
-        <p class="lede reveal">Anvesh Labs designs and builds mobile apps for learning and education. We make products for the people the big platforms overlook: built for their language, their exams and their phones.</p>
-        <div class="cta reveal">
-          <a class="btn btn-dark" href="#apps">See our apps</a>
-          <a class="btn btn-ghost" href="#craft">How we work</a>
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="eyebrow"><i></i>Independent app studio · Maharashtra</div>
+        <h1 id="hero-title">Apps that help people <em>rise</em>, built in Marathi first.</h1>
+        <p class="lede">Anvesh Labs is a small, independent studio building mobile apps for learning and education. We make products for the people big platforms overlook: built for their language, their exams and their phones.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="#apps">Explore our apps
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#craft">What we do</a>
         </div>
       </div>
-    </div>
-    <div class="rise" aria-hidden="true">
-      <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
-        <circle cx="120" cy="170" r="9" fill="#12152A"/>
-        <circle cx="360" cy="140" r="12" fill="#4A3A52"/>
-        <circle cx="600" cy="108" r="15" fill="#7D4B4E"/>
-        <circle cx="840" cy="72" r="18" fill="#B05A36"/>
-        <circle cx="1080" cy="32" r="22" fill="#D9691F"/>
-      </svg>
+      <div class="hero-mark reveal" role="img" aria-label="The Anvesh Labs mark: five dots rising from deep ink to saffron">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="14" cy="100" r="6" fill="#A9ADC6"/><circle cx="35" cy="84" r="7.5" fill="#C3A496"/><circle cx="57" cy="66" r="9" fill="#D99B75"/><circle cx="81" cy="45" r="10.5" fill="#E8955C"/><circle cx="105" cy="20" r="13" fill="#F0904A"/>
+        </svg>
+        <div class="caption"><span>ANVESH · THE QUEST</span><span lang="mr">अन्वेष</span></div>
+      </div>
     </div>
   </section>
 
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>Police Bharti</span><b></b><span lang="mr">सराव</span><b></b><span>Talathi</span><b></b><span>MPSC Group C</span><b></b><span lang="mr">चालू घडामोडी</span><b></b><span>Rajyaseva</span><b></b><span>School software</span><b></b><span lang="mr">रोज १० प्रश्न</span><b></b>
-      <span>Police Bharti</span><b></b><span lang="mr">सराव</span><b></b><span>Talathi</span><b></b><span>MPSC Group C</span><b></b><span lang="mr">चालू घडामोडी</span><b></b><span>Rajyaseva</span><b></b><span>School software</span><b></b><span lang="mr">रोज १० प्रश्न</span><b></b>
-    </div>
-  </div>
-
   <!-- APPS -->
-  <section class="block" id="apps" aria-labelledby="apps-title">
-    <div class="wrap sec">
-      <div class="sec-side"><div class="sticky"><span class="num">01</span><span class="label">Our apps</span></div></div>
-      <div>
-        <h2 id="apps-title" class="reveal">Made for <em>Maharashtra.</em></h2>
-        <p class="intro reveal">Every product begins with one question: what would actually help here? Our answers so far are a daily practice habit for exam aspirants and simpler software for schools.</p>
+  <section id="apps" aria-labelledby="apps-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <div class="eyebrow"><i></i>Our apps</div>
+          <h2 id="apps-title">Made for Maharashtra.</h2>
+        </div>
+        <p>Every product we build starts with one question: what would actually help here? Our answers so far are a daily practice habit for exam aspirants and simpler software for schools.</p>
+      </div>
 
-        <article class="feature" id="sarav" aria-labelledby="sarav-title">
-          <div class="reveal">
-            <span class="status"><i></i>Coming soon to Google Play</span>
-            <div class="app-name"><h3 id="sarav-title">Sarav</h3><span lang="mr">सराव</span></div>
-            <p class="desc">Ten questions a day, in Marathi, for your exam. Sarav turns preparation for Maharashtra's government exams into a five-minute habit that fits a bus ride.</p>
-            <ul class="flist">
-              <li><span>i.</span>Five syllabus questions and five current affairs every day, each explained in Marathi</li>
-              <li><span>ii.</span>A streak that counts down to your exam date</li>
-              <li><span>iii.</span>Weekly leagues with aspirants from your district</li>
-              <li><span>iv.</span>Mistakes come back until you get them right</li>
-              <li><span>v.</span>Previous-year papers, free and offline</li>
-            </ul>
-            <div class="tracks" aria-label="Exam tracks"><span class="on">Police Bharti</span><span>Talathi</span><span>MPSC Group C</span><span>Rajyaseva</span></div>
-            <a class="btn btn-dark" href="mailto:hello@anveshlabs.com?subject=Notify%20me%20when%20Sarav%20launches">Get notified at launch</a>
-          </div>
-
-          <div class="phone reveal" role="img" aria-label="Preview of the Sarav app: a Marathi general knowledge question with four options and an explanation">
-            <div class="screen" aria-hidden="true">
-              <div class="s-top"><span lang="mr">आजचा सराव</span><span class="streak">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 0-8z"/></svg>
-                <span lang="mr">१२ दिवस</span></span></div>
-              <div class="s-progress"><i></i></div>
-              <div class="s-count">Question 4 of 10</div>
-              <p class="s-q" lang="mr">भारताचे पहिले पंतप्रधान कोण होते?</p>
-              <div class="s-opts" lang="mr">
-                <div>सरदार वल्लभभाई पटेल</div>
-                <div class="right">पं. जवाहरलाल नेहरू</div>
-                <div>डॉ. राजेंद्र प्रसाद</div>
-                <div>लाल बहादूर शास्त्री</div>
+      <div class="apps">
+        <article class="app flag reveal" id="sarav" aria-labelledby="sarav-title">
+          <div class="app-top">
+            <div class="app-id">
+              <div class="app-icon" aria-hidden="true"><span lang="mr">स</span></div>
+              <div>
+                <small>Exam preparation · Android</small>
+                <h3 id="sarav-title">Sarav <span lang="mr" style="color:var(--saffron-soft)">सराव</span></h3>
               </div>
-              <div class="s-exp" lang="mr">बरोबर! पं. नेहरू १९४७ ते १९६४ पर्यंत पंतप्रधान होते.</div>
-              <div class="s-foot"><span lang="mr">पोलीस भरती</span><span>Next →</span></div>
             </div>
+            <span class="pill">Coming soon</span>
+          </div>
+          <p>Ten questions a day, in Marathi, for your exam. Sarav turns preparation for Maharashtra's government exams into a five-minute daily habit that fits a bus ride.</p>
+          <ul class="feat">
+            <li>Daily 10: five syllabus questions and five current affairs, each explained in Marathi</li>
+            <li>A streak that counts down to your exam date</li>
+            <li>Weekly leagues with aspirants from your district</li>
+            <li>Your mistakes come back until you get them right</li>
+            <li>Previous-year papers, free and offline</li>
+            <li>Marathi and English, one tap apart</li>
+          </ul>
+          <div class="tracks" aria-label="Exam tracks">
+            <span class="on">Police Bharti</span><span>Talathi</span><span>MPSC Group C</span><span>Rajyaseva</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-light" href="mailto:hello@anveshlabs.com?subject=Notify%20me%20when%20Sarav%20launches">Get notified at launch</a>
+            <a class="btn btn-line" href="#contact">Partner with us</a>
           </div>
         </article>
 
-        <a class="row reveal" href="mailto:hello@anveshlabs.com?subject=SchoolDeck%20for%20our%20school" aria-label="SchoolDeck: school management software. Email us to bring it to your school">
-          <div><span class="label">School management · In development</span><h3>SchoolDeck</h3></div>
-          <p>Attendance, fees and parent updates on WhatsApp, in Marathi and ready for state compliance. Simple enough for every teacher.</p>
-          <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span>
-        </a>
-        <a class="row soft reveal" href="#contact" aria-label="More from the lab: tell us your idea">
-          <div><span class="label">Next</span><h3>More from the lab</h3></div>
-          <p>We're always searching for the next useful thing for learners in India. Have an idea? Tell us.</p>
-          <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span>
-        </a>
+        <article class="app reveal" aria-labelledby="sd-title">
+          <div class="app-top">
+            <div class="app-id">
+              <div class="app-icon light" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#14172E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
+              </div>
+              <div>
+                <small>School management · Web &amp; mobile</small>
+                <h3 id="sd-title">SchoolDeck</h3>
+              </div>
+            </div>
+            <span class="pill dim">In development</span>
+          </div>
+          <p>School software designed for how schools in Maharashtra actually run: in Marathi, ready for state compliance, and simple enough for every teacher to use.</p>
+          <ul class="feat" style="grid-template-columns:1fr">
+            <li>Attendance in seconds, by teachers, on their phones</li>
+            <li>Fee collection and receipts without the paperwork</li>
+            <li>Instant notifications to parents on WhatsApp</li>
+            <li>Marathi certificates and state-portal ready data</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-ghost" href="mailto:hello@anveshlabs.com?subject=SchoolDeck%20for%20our%20school">Bring it to your school</a>
+          </div>
+        </article>
+
+        <div class="next reveal">
+          <div><b>More from the lab.</b> We're always exploring the next useful thing for learners in India.</div>
+          <a class="btn btn-ghost" href="#contact">Have an idea? Tell us</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- THE NAME -->
-  <section class="block name" id="name" aria-labelledby="name-title">
-    <div class="wrap sec">
-      <div class="sec-side"><div class="sticky"><span class="num">02</span><span class="label">The name</span></div></div>
-      <div class="entry">
+  <!-- ABOUT -->
+  <section class="story" id="story" aria-labelledby="story-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <div class="eyebrow"><i></i>About</div>
+          <h2 id="story-title">The name means a quest.</h2>
+        </div>
+        <p><span lang="mr">अन्वेष</span> (anvesh) means a search, a discovery. Every product we build starts as a search for what would genuinely help.</p>
+      </div>
+
+      <div class="story-body">
         <div class="reveal">
-          <h2 id="name-title" class="big-mr" lang="mr">अन्वेष</h2>
-          <div class="pron"><span class="serif">anvesh</span><span class="label">Sanskrit · noun</span></div>
+          <p>We build for people who are climbing: the aspirant studying in a library after a full day's work, the teacher handling forty students with a register and a pen.</p>
+          <p>Our mark shows that climb. Five dots rising from deep ink into saffron, because real progress happens one small step at a time.</p>
         </div>
-        <div class="def reveal">
-          <ol>
-            <li>A quest; a search.</li>
-            <li>The act of discovering something that was there all along.</li>
-          </ol>
-        </div>
-        <div class="name-note">
-          <div class="reveal"><h3>Every product is a search.</h3><p>We start by looking closely: in study libraries, staff rooms and WhatsApp groups. We build only once we've found something worth fixing.</p></div>
-          <div class="reveal"><h3>Rising, step by step.</h3><p>Our mark is five dots climbing from deep ink into saffron. It's how progress really happens: one small step a day.</p></div>
-          <div class="reveal"><h3>Rooted here.</h3><p>We build in Marathi first, for Maharashtra first. Being specific is how we make things that feel made for you.</p></div>
-        </div>
+        <blockquote class="reveal">“Where you start doesn't decide where you end up. Steady practice does.”
+          <span lang="mr">सुरुवात कुठून झाली यापेक्षा, रोजचा सराव महत्त्वाचा.</span>
+        </blockquote>
       </div>
     </div>
   </section>
 
   <!-- CRAFT -->
-  <section class="block" id="craft" aria-labelledby="craft-title">
-    <div class="wrap sec">
-      <div class="sec-side"><div class="sticky"><span class="num">03</span><span class="label">Craft</span></div></div>
-      <div>
-        <h2 id="craft-title" class="reveal">Small studio. <em>Serious craft.</em></h2>
-        <p class="intro reveal">We design, build and run our products end to end, from the first screen to the database behind it.</p>
-        <div class="craft">
-          <article class="reveal"><span class="n">i.</span><div><h3>Mobile apps that feel native</h3><p>Fast, polished apps for Android and iOS, built with Flutter, React Native and Expo.</p></div></article>
-          <article class="reveal"><span class="n">ii.</span><div><h3>Backends built to scale</h3><p>Secure, multi-tenant systems on Supabase and PostgreSQL, with row-level security from day one.</p></div></article>
-          <article class="reveal"><span class="n">iii.</span><div><h3>Marathi-first design</h3><p>Devanagari typography, bilingual interfaces and copy that sounds like a person, not a translation.</p></div></article>
-          <article class="reveal"><span class="n">iv.</span><div><h3>Made for budget phones</h3><p>Light downloads, quick loading, and offline modes that keep working on patchy networks.</p></div></article>
-          <article class="reveal"><span class="n">v.</span><div><h3>AI, checked by people</h3><p>We use AI to move faster, and real experts review what it produces. Accuracy comes first.</p></div></article>
-          <article class="reveal"><span class="n">vi.</span><div><h3>Habits that stick</h3><p>Streaks, leagues and gentle nudges, designed around a real goal instead of empty badges.</p></div></article>
+  <section id="craft" aria-labelledby="craft-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <div class="eyebrow"><i></i>What we do</div>
+          <h2 id="craft-title">Small studio. Serious craft.</h2>
         </div>
-        <div class="stack reveal" aria-label="Technologies we use">
-          <span class="label">Built with</span><span>Flutter</span><span>React Native</span><span>Expo</span><span>Supabase</span><span>PostgreSQL</span><span>TypeScript</span><span>WhatsApp Business API</span>
-        </div>
+        <p>We design, build and run our products end to end, from the first screen to the database behind it.</p>
+      </div>
+
+      <div class="craft reveal">
+        <article>
+          <div class="num">01</div>
+          <h3>Mobile apps that feel native</h3>
+          <p>Fast, polished apps for Android and iOS, built with Flutter, React Native and Expo.</p>
+        </article>
+        <article>
+          <div class="num">02</div>
+          <h3>Backends built to scale</h3>
+          <p>Secure, multi-tenant systems on Supabase and PostgreSQL, with row-level security from day one.</p>
+        </article>
+        <article>
+          <div class="num">03</div>
+          <h3>Marathi-first design</h3>
+          <p>Devanagari typography, bilingual interfaces and copy that sounds like a person, not a translation.</p>
+        </article>
+        <article>
+          <div class="num">04</div>
+          <h3>Made for budget phones</h3>
+          <p>Light downloads, quick loading, and offline modes that keep working on patchy networks.</p>
+        </article>
+        <article>
+          <div class="num">05</div>
+          <h3>AI, checked by people</h3>
+          <p>We use AI to move faster, and real experts review what it produces. Accuracy is the brand.</p>
+        </article>
+        <article>
+          <div class="num">06</div>
+          <h3>Habits that stick</h3>
+          <p>Streaks, leagues and gentle nudges, designed around a real goal instead of empty badges.</p>
+        </article>
+      </div>
+
+      <div class="stack reveal" aria-label="Technologies we use">
+        <em>Built with</em><span>Flutter</span><span>React Native</span><span>Expo</span><span>Supabase</span><span>PostgreSQL</span><span>TypeScript</span><span>WhatsApp Business API</span>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact" aria-labelledby="contact-title">
-    <div class="wrap">
-      <span class="label reveal">04 · Contact</span>
-      <h2 id="contact-title" class="reveal" style="margin-top:20px">Let's build something that <em>matters here.</em></h2>
-      <a class="mail-big reveal" href="mailto:hello@anveshlabs.com">hello@anveshlabs.com
-        <svg width="34" height="34" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M4 14L14 4M6 4h8v8"/></svg>
-      </a>
-      <div class="mail-actions reveal">
-        <button class="btn btn-ghost" id="copyBtn" type="button">Copy email</button>
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <div class="eyebrow"><i></i>Contact</div>
+        <h2 id="contact-title">Let's build something that matters here.</h2>
+        <div class="mail">
+          <code id="email">hello@anveshlabs.com</code>
+          <button class="btn btn-dark" id="copyBtn" type="button">Copy email</button>
+          <a class="btn btn-ghost" href="mailto:hello@anveshlabs.com">Write to us</a>
+        </div>
+        <p class="copied" id="copied" aria-live="polite"></p>
       </div>
-      <p class="copied" id="copied" aria-live="polite"></p>
-      <div class="who reveal" aria-label="Who we'd love to hear from">
-        <div><b>Schools &amp; trusts</b><span>Try SchoolDeck</span></div>
-        <div><b>Educators &amp; creators</b><span>Partner on Sarav</span></div>
-        <div><b>Coaching institutes</b><span>Bring Sarav to your students</span></div>
-        <div><b>Aspirants</b><span>Tell us what you need</span></div>
-      </div>
+      <ul class="who reveal" aria-label="Who we'd love to hear from">
+        <li><b>Schools &amp; trusts</b><span>Try SchoolDeck</span></li>
+        <li><b>Educators &amp; YouTube creators</b><span>Partner on Sarav</span></li>
+        <li><b>Coaching institutes &amp; libraries</b><span>Bring Sarav to your students</span></li>
+        <li><b>Aspirants</b><span>Tell us what you need</span></li>
+      </ul>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <p class="giant" aria-hidden="true">anvesh <i>labs</i></p>
-    <p class="disclaimer">Sarav is an independent practice app. It is not affiliated with MPSC, Maharashtra Police or any government body.</p>
-    <div class="foot">
-      <div>© <span id="yr">2026</span> Anvesh Labs · Made in Maharashtra</div>
-      <ul>
-        <li><a href="/support">Support</a></li>
-        <li><a href="/privacy">Privacy</a></li>
-        <li><a href="/terms">Terms</a></li>
-        <li><a href="/delete-account">Delete account</a></li>
-      </ul>
-    </div>
+  <p class="wrap" style="color:var(--muted);font-size:13px;margin:0 auto 24px">Sarav is an independent practice app. It is not affiliated with MPSC, Maharashtra Police or any government body.</p>
+  <div class="wrap foot">
+    <div>© <span id="yr">2026</span> Anvesh Labs · Made in Maharashtra · <span lang="mr">अन्वेष लॅब्स</span></div>
+    <ul>
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#story">About</a></li>
+      <li><a href="/support">Support</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/terms">Terms</a></li>
+      <li><a href="/delete-account">Delete account</a></li>
+    </ul>
   </div>
 </footer>
 
@@ -487,8 +481,9 @@
 
     var copyBtn=document.getElementById('copyBtn'), copied=document.getElementById('copied');
     copyBtn.addEventListener('click', function(){
+      var text='hello@anveshlabs.com';
       try{
-        navigator.clipboard.writeText('hello@anveshlabs.com').then(function(){ copied.textContent='Email copied.'; }, function(){ copied.textContent='Copy failed. Please select the address above.'; });
+        navigator.clipboard.writeText(text).then(function(){ copied.textContent='Email copied.'; }, function(){ copied.textContent='Copy failed. Please select the address above.'; });
       }catch(e){ copied.textContent='Copy failed. Please select the address above.'; }
     });
 
