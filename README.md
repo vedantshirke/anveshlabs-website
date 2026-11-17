@@ -4,9 +4,23 @@ Source for [anveshlabs.com](https://anveshlabs.com): a static, single-page site 
 
 ## Files
 
-- `index.html` — the whole site (HTML, CSS and a little JS in one file), with SEO meta tags and schema.org structured data
+- `index.html` — the home page (HTML, CSS and a little JS in one file), with SEO meta tags and schema.org structured data
+- `privacy.html`, `terms.html` — Privacy Policy and Terms of Service (served at `/privacy`, `/terms`)
+- `delete-account.html` — account deletion page required by Google Play (`/delete-account`)
+- `support.html` — help and FAQ, used as the store support URL (`/support`)
+- `assets/legal.css` — shared styles for the inner pages
 - `robots.txt`, `sitemap.xml` — for search engines
 - `vercel.json` — clean URLs and caching headers
+
+## URLs for Play Console
+
+| Field | URL |
+| --- | --- |
+| Privacy policy | https://anveshlabs.com/privacy |
+| Account deletion (Data safety) | https://anveshlabs.com/delete-account |
+| Website / support | https://anveshlabs.com/support |
+
+Highlighted `[PLACEHOLDERS]` in the legal pages must be filled in before submission.
 
 ## Deploy on Vercel
 
@@ -19,4 +33,4 @@ Every push to `main` deploys automatically.
 ## Still to add
 
 - `og-image.png` (1200×630) and `logo.png` — referenced in the page's meta tags
-- `/privacy` and `/terms` pages — required before publishing Sarav on the Play Store
+- `app-ads.txt` — once you have an AdMob publisher ID
